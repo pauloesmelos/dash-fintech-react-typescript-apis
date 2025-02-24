@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@layer base {
+    body {
+        @apply bg-neutral-100 p-0;
+    }
+    .aside {
+        @apply border-r-blue-500 shadow-lg;
+    }
+    .scaleUp {
+        @apply hover:scale-[1.1] duration-300 ease-linear;
+    }
+}
+.shadowButtonMonth:hover {
+    transition: .3s;
+    box-shadow: 0 0 10px #174DE3;
+}
