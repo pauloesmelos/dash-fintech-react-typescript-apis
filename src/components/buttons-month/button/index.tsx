@@ -32,8 +32,8 @@ const Button = ({ month }: ButtonProps) => {
     <>
         <button
         onClick={() => setMonthByButton(month)} 
-        className="py-2 px-6 bg-sky-700 text-white font-medium rounded-lg duration-300
-        hover:bg-white hover:text-sky-700 cursor-pointer shadowButtonMonth">
+        className="py-2 px-6 bg-blue-500 text-white font-medium rounded-lg duration-300
+        hover:bg-white hover:text-blue-700 cursor-pointer shadowButtonMonth">
             {getMonth(month)}
         </button>
     </>
