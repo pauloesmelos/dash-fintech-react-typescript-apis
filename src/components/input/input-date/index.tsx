@@ -7,10 +7,10 @@ type InputDateProps = ComponentProps<"input"> & {
 
 const InputDate = ({ label, id, ...props }: InputDateProps) => {
   return (
-    <div className="flex flex-col gap-2">
+    <div className="w-full flex flex-col gap-2">
         <label className="py-2 px-4 bg-white rounded-xl font-medium text-lg" htmlFor={id}>{label}</label>
         <input 
-            className="py-2 px-4 bg-white rounded-xl" 
+            className="py-2 px-4 bg-white rounded-xl w-full" 
             type="date" 
             id={id} 
             name={id}

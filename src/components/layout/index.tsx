@@ -6,7 +6,7 @@ const Layout = () => {
     <>
         <div className="w-full flex gap-5">
           <Aside />
-          <div className="w-full">
+          <div className="w-full ml-[100px]">
             <Outlet />
           </div>
         </div>

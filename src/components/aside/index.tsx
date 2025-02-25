@@ -9,8 +9,8 @@ import { NavLink } from "react-router-dom";
 const Aside = () => {
   const style = {
     aside: {
-        active: "w-[270px] h-screen bg-blue-500 aside relative ease-linear duration-200",
-        notActive: "w-[80px] h-screen bg-blue-500 aside relative ease-linear duration-500"
+        active: "w-[270px] h-screen fixed bg-blue-500 aside ease-linear duration-200 z-[100]",
+        notActive: "w-[80px] h-screen fixed bg-blue-500 aside ease-linear duration-500 z-[100]"
     }
   }
   const [expanded, setExpanded] = useState(false);
@@ -44,7 +44,7 @@ const Aside = () => {
                         <IoMdHome />
                     </div>
                     { expanded && 
-                        <span className="text-white duration-200">
+                        <span className="text-white duration-200 font-medium">
                             Home
                         </span>
                     }
@@ -58,7 +58,7 @@ const Aside = () => {
                         <FaDollarSign />
                     </div>
                     { expanded && 
-                        <span className="text-white duration-200">
+                        <span className="text-white duration-200 font-medium">
                             Vendas
                         </span>
                     }
@@ -69,7 +69,7 @@ const Aside = () => {
                         <HiLocationMarker />
                     </div>
                     { expanded && 
-                        <span className="text-white duration-200">
+                        <span className="text-white duration-200 font-medium">
                             Localização
                         </span>
                     }
@@ -80,7 +80,7 @@ const Aside = () => {
                         <FaInfo />
                     </div>
                     { expanded && 
-                        <span className="text-white duration-200">
+                        <span className="text-white duration-200 font-medium">
                             Sobre
                         </span>
                     }
@@ -91,7 +91,7 @@ const Aside = () => {
                         <GrConfigure />
                     </div>
                     { expanded && 
-                        <span className="text-white duration-200">
+                        <span className="text-white duration-200 font-medium">
                             Configurações
                         </span>
                     }
@@ -102,7 +102,7 @@ const Aside = () => {
                         <IoMdLogOut />
                     </div>
                     { expanded && 
-                        <span className="text-white duration-200">
+                        <span className="text-white duration-200 font-medium">
                             Logout
                         </span>
                     }
