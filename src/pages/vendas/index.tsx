@@ -1,4 +1,5 @@
 import ButtonsMonth from "../../components/buttons-month";
+import Helmet from "../../components/helmet";
 import InputDate from "../../components/input/input-date";
 import Loader from "../../components/loader";
 import TableVendas from "../../components/table-vendas";
@@ -12,6 +13,7 @@ const Vendas = () => {
   if(!data || isLoading) return <Loader />
   return (
     <div className="w-full">
+      <Helmet title="fintech - visão geral" description="fintech - visão geral" />
       <div className="w-full p-2">
         <div className="w-full flex gap-4">
           <div className="w-full flex items-center gap-5">

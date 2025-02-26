@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import ButtonsMonth from "../../components/buttons-month";
 import CardValues from "../../components/card-home";
 import GraphLineChart from "../../components/graph-line-chart";
+import Helmet from "../../components/helmet";
 import InputDate from "../../components/input/input-date";
 import Loader from "../../components/loader";
 import { useGlobalInputDate } from "../../global/input-date/GlobalInputDate";
@@ -43,6 +44,7 @@ const Home = () => {
 
   return (
     <div className="w-full">
+      <Helmet title="fintech - home" description="fintech home page" />
       <div className="w-full p-2">
         <div className="w-full flex gap-4">
           <div className="w-full flex items-center gap-5">

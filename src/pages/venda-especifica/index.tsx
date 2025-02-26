@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import Helmet from "../../components/helmet";
 import Loader from "../../components/loader";
 import useGetVendasById from "../../hooks/useGetVendasById";
 
@@ -30,6 +31,7 @@ const VendaEspecifica = () => {
   if(!data || isLoading) return <Loader />
   return (
     <div className="w-full">
+      <Helmet title="fintech - venda específica" description="fintech venda específica page" />
       <div className="p-2">
         <h1 className="font-bold text-neutral-800 text-4xl tracking-wider">
           Dados de venda específica
@@ -71,8 +73,11 @@ const VendaEspecifica = () => {
         <div className="flex flex-col gap-2">
           <h2 className="font-semibold">Preço</h2>
           <div className="bg-white p-4 rounded-lg shadowBlue">
-            <p>
-              {data.preco}
+            <p className="text-emerald-500 font-bold">
+              {data.preco.toLocaleString("pt-BR", {
+                style: "currency",
+                currency: "BRL"
+              })}
             </p>
           </div>
         </div>
