@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import useGetVendasById from "../../hooks/useGetVendasById";
 import Loader from "../../components/loader";
+import useGetVendasById from "../../hooks/useGetVendasById";
 
 const VendaEspecifica = () => {
   const [styleStatus, setStyleStatus] = useState("");
@@ -54,7 +54,7 @@ const VendaEspecifica = () => {
         </div>
         <div className="flex flex-col gap-2">
           <h2 className="font-semibold">Status</h2>
-          <div className="bg-white p-4 rounded-lg shadow-lg shadowBlue">
+          <div className="bg-white p-4 rounded-lg shadowBlue">
             <p className={styleStatus}>
               {data.status}
             </p>
@@ -62,7 +62,7 @@ const VendaEspecifica = () => {
         </div>
         <div className="flex flex-col gap-2">
           <h2 className="font-semibold">Pagamento</h2>
-          <div className="bg-white p-4 rounded-lg shadow-lg shadowBlue">
+          <div className="bg-white p-4 rounded-lg shadowBlue">
             <p>
               {data.pagamento}
             </p>

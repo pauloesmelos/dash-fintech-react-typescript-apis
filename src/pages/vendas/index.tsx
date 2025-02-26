@@ -1,9 +1,9 @@
-import InputDate from "../../components/input/input-date";
 import ButtonsMonth from "../../components/buttons-month";
-import { useGlobalInputDate } from "../../global/input-date/GlobalInputDate";
-import useGetVendasPeriodo from "../../hooks/useGetVendasPeriodo";
+import InputDate from "../../components/input/input-date";
 import Loader from "../../components/loader";
 import TableVendas from "../../components/table-vendas";
+import { useGlobalInputDate } from "../../global/input-date/GlobalInputDate";
+import useGetVendasPeriodo from "../../hooks/useGetVendasPeriodo";
 
 const Vendas = () => {
   const { inicio, setInicio, final, setFinal } = useGlobalInputDate();
@@ -28,9 +28,9 @@ const Vendas = () => {
               onChange={({ target }) => setFinal(target.value)}
             />
           </div>
-          <div className="bg-white rounded-xl shadow-lg py-2 px-8">
-            <h2 className="font-bold text-2xl">
-              Visão Geral
+          <div className="bg-white rounded-xl shadow-lg py-2 px-8 flex flex-col justify-center">
+            <h2 className="font-bold text-2xl text-blue-500">
+              Vendas
             </h2>
           </div>
         </div>
@@ -43,7 +43,7 @@ const Vendas = () => {
               Tabela Geral
             </h3>
             <span className="text-sm text-neutral-400">
-              220 itens encontrados
+              {data.length} itens encontrados
             </span>
           </div>
           <div className="mt-8">

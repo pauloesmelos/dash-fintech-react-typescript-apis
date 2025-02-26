@@ -23,7 +23,7 @@ const Aside = () => {
         <div
         onClick={handleExpanded}
         className="absolute top-[30%] right-[-25px] bg-white shadow-lg rounded-full p-2 group
-        cursor-pointer border-[3px] border-white">
+        cursor-pointer hover:bg-blue-400">
             <FaArrowRight className={`${expanded ? "rotate-180" : "rotate-0"} text-lg text-slate-600 duration-200
             ease-linear`} />
         </div>
@@ -37,10 +37,10 @@ const Aside = () => {
             <div className="flex flex-col gap-8 px-2 mt-8">
                 <NavLink 
                     to="/" 
-                    className="flex items-center gap-4 cursor-pointer group hover:opacity-70 duration-200
+                    className="flex items-center gap-4 cursor-pointer group rounded-md
                     ease-linear"
                 >
-                    <div className="p-1 text-xl rounded-md text-blue-500 bg-white">
+                    <div className="p-1 text-xl rounded-md text-blue-500 bg-white shadowAsideItens">
                         <IoMdHome />
                     </div>
                     { expanded && 
@@ -51,10 +51,10 @@ const Aside = () => {
                 </NavLink>
                 <NavLink 
                     to="/vendas" 
-                    className="flex items-center gap-4 cursor-pointer group hover:opacity-70 duration-200
+                    className="flex items-center gap-4 cursor-pointer group
                     ease-linear"
                 >
-                    <div className="p-1 text-xl rounded-md text-blue-500 bg-white">
+                    <div className="p-1 text-xl rounded-md text-blue-500 bg-white shadowAsideItens">
                         <FaDollarSign />
                     </div>
                     { expanded && 
@@ -63,9 +63,9 @@ const Aside = () => {
                         </span>
                     }
                 </NavLink>
-                <div className="flex items-center gap-4 cursor-pointer group hover:opacity-70 duration-200
+                <div className="flex items-center gap-4 cursor-pointer group
                 ease-linear">
-                    <div className="p-1 text-xl rounded-md text-blue-500 bg-white">
+                    <div className="p-1 text-xl rounded-md text-blue-500 bg-white shadowAsideItens">
                         <HiLocationMarker />
                     </div>
                     { expanded && 
@@ -74,9 +74,9 @@ const Aside = () => {
                         </span>
                     }
                 </div>
-                <div className="flex items-center gap-4 cursor-pointer group hover:opacity-70 duration-200
+                <div className="flex items-center gap-4 cursor-pointer group
                 ease-linear">
-                    <div className="p-1 text-xl rounded-md text-blue-500 bg-white">
+                    <div className="p-1 text-xl rounded-md text-blue-500 bg-white shadowAsideItens">
                         <FaInfo />
                     </div>
                     { expanded && 
@@ -85,9 +85,9 @@ const Aside = () => {
                         </span>
                     }
                 </div>
-                <div className="flex items-center gap-4 cursor-pointer group hover:opacity-70 duration-200
+                <div className="flex items-center gap-4 cursor-pointer group
                 ease-linear">
-                    <div className="p-1 text-xl rounded-md text-blue-500 bg-white">
+                    <div className="p-1 text-xl rounded-md text-blue-500 bg-white shadowAsideItens">
                         <GrConfigure />
                     </div>
                     { expanded && 
@@ -96,9 +96,9 @@ const Aside = () => {
                         </span>
                     }
                 </div>
-                <div className="flex items-center gap-4 cursor-pointer group hover:opacity-70 duration-200
+                <div className="flex items-center gap-4 cursor-pointer group
                 ease-linear">
-                    <div className="p-1 text-xl rounded-md text-blue-500 bg-white">
+                    <div className="p-1 text-xl rounded-md text-blue-500 bg-white shadowAsideItens">
                         <IoMdLogOut />
                     </div>
                     { expanded && 

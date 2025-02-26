@@ -1,22 +1,12 @@
 import { useEffect, useState } from "react";
-import { 
-  ResponsiveContainer, 
-  LineChart, 
-  XAxis, 
-  YAxis, 
-  Tooltip, 
-  Legend, 
-  CartesianGrid,
-  Line
-} from "recharts";
 import ButtonsMonth from "../../components/buttons-month";
 import CardValues from "../../components/card-home";
+import GraphLineChart from "../../components/graph-line-chart";
 import InputDate from "../../components/input/input-date";
 import Loader from "../../components/loader";
 import { useGlobalInputDate } from "../../global/input-date/GlobalInputDate";
 import useGetVendasPeriodo from "../../hooks/useGetVendasPeriodo";
 import { Venda } from "../../types/Venda";
-import GraphLineChart from "../../components/graph-line-chart";
 
 type Amount = {
   vendas: number,
@@ -69,8 +59,8 @@ const Home = () => {
               onChange={({ target }) => setFinal(target.value)}
             />
           </div>
-          <div className="bg-white rounded-xl shadow-lg h-[50px] py-2 px-8">
-            <h2 className="font-bold text-2xl">
+          <div className="bg-white rounded-xl shadow-lg py-2 px-8 flex flex-col justify-center">
+            <h2 className="font-bold text-2xl text-blue-500">
               Home
             </h2>
           </div>

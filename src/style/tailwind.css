@@ -16,5 +16,12 @@
     box-shadow: 0 0 10px #5c84f5;
 }
 .shadowBlue {
+    box-shadow: 0 0 10px #ccc;
+}
+.shadowBlue:hover {
     box-shadow: 0 0 10px #5c84f5;
+}
+.shadowAsideItens:hover {
+    box-shadow: 0 0 15px #fff;
+    transition: .4s;
 }
